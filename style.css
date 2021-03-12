@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    font-family: 'Lato', 'sans-serif';
+    font-size: 1.6rem;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+h2 {
+    position: absolute;
+    top: 1rem;
+}
+
+.range-container {
+    position: relative;
+}
+
+input[type='range'] {
+    appearance: none;
+    margin: 1.8rem 0;
+    width: 30rem;
+}
+
+input[type='range']:focus {
+    outline: none;
+}
+
+input[type='range'] + label {
+    background-color: #fff;
+    border-radius: .4rem;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, .3);
+    padding: .5rem 0;
+    position: absolute;
+        left: 11rem;
+        top: -2.5rem;
+    text-align: center;
+    width: 8rem; 
+}
+
+/* Chrome y Safari */
+input[type='range']::-webkit-slider-runnable-track {
+    background: purple;
+    border-radius: .4rem;
+    cursor: pointer;
+    height: 1rem;
+    width: 100%;
+}
+
+input[type='range']::-webkit-slider-thumb {
+    appearance: none;
+    background: #fff;
+    border: .1rem solid purple;
+    border-radius: 50%;
+    height: 2.4rem;
+    margin-top: -7px;
+    width: 2.4rem;
+}
+
+/* Firefox */
+input[type='range']::-moz-slider-runnable-track {
+    background: purple;
+    border-radius: .4rem;
+    cursor: pointer;
+    height: 1rem;
+    width: 100%;
+}
+
+input[type='range']::-moz-range-thumb {
+    appearance: none;
+    background: #fff;
+    border: .1rem solid purple;
+    border-radius: 50%;
+    height: 2.4rem;
+    margin-top: -7px;
+    width: 2.4rem;
+}
+
+/* IE */
+input[type='range']::-ms-track {
+    background: purple;
+    border-radius: .4rem;
+    cursor: pointer;
+    height: 1rem;
+    width: 100%;
+}
+
+input[type='range']::-ms-thumb {
+    appearance: none;
+    background: #fff;
+    border: .1rem solid purple;
+    border-radius: 50%;
+    height: 2.4rem;
+    margin-top: -7px;
+    width: 2.4rem;
+}
